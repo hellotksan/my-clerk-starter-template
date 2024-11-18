@@ -38,9 +38,26 @@ This template allows you to get started with Clerk and Next.js (App Router) in a
 
 ## Demo
 
-A hosted demo of this example is available at https://clerk-nextjs-app-router.vercel.app/
+A hosted demo of this example is available at [https://clerk-nextjs-app-router.vercel.app](https://clerk-nextjs-app-router.vercel.app)
 
 ## Deploy
+
+1. Delete .env.example
+
+2. Setting Enviroment Variables
+
+   Clerk ⇒ Create New Application ⇒ Copy .env.local
+
+   ```env
+   CLERK_SECRET_KEY=
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+   NEXT_PUBLIC_CLERK_SIGN_IN_FORCE_REDIRECT_URL=/dashboard
+   NEXT_PUBLIC_CLERK_SIGN_UP_FORCE_REDIRECT_URL=/dashboard
+   ```
+
+3. Enable organizations
+
+   Clerk Dashboard ⇒ Organization Management ⇒ Enable organizations
 
 Easily deploy the template to Vercel with the button below. You will need to set the required environment variables in the Vercel dashboard.
 
